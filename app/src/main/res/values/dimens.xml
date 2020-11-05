@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_bottom_value">9dp</dimen>
+    <dimen name="margin_left_value">15dp</dimen>
+    <dimen name="margin_right_value">15dp</dimen>
+    <dimen name="answer_font_size">38sp</dimen>
+</resources>
