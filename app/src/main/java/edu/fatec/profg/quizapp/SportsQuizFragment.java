@@ -31,7 +31,7 @@ import java.util.List;
 
 public class SportsQuizFragment extends Fragment {
 
-    private static final int NUMBER_OF_SPORTS_TO_FINISH_QUIZ = 2;
+    private static final int NUMBER_OF_SPORTS_TO_FINISH_QUIZ = 10;
 
     private List<String> allSportsNamesList;
     private List<String> quizSportsNamesSelectedList;
