@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SportsQuizFragment"
+    android:background="@drawable/bg"
     android:orientation="vertical"
-    android:background="@color/backgroundColor">
+    tools:context=".SportsQuizFragment">
 
     <LinearLayout
         android:id="@+id/first_row_linear"
@@ -17,15 +17,17 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonwhite"
             android:lines="2" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonwhite"
             android:lines="2" />
     </LinearLayout>
 
@@ -38,15 +40,17 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonwhite"
             android:lines="2" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonwhite"
             android:lines="2" />
     </LinearLayout>
 
@@ -59,45 +63,51 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonwhite"
             android:lines="2" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonwhite"
             android:lines="2" />
     </LinearLayout>
-    
+
     <TextView
         android:id="@+id/progress_indicator_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom_value"
+        android:fontFamily="@font/play"
+        android:text="@string/quiz_progress_text"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/primaryTextColor"
-        android:layout_marginBottom="@dimen/margin_bottom_value"
-        android:text="@string/quiz_progress_text" />
-    
+        android:textStyle="bold" />
+
     <ImageView
         android:id="@+id/sport_img"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="@dimen/margin_bottom_value"
         android:layout_marginLeft="@dimen/margin_left_value"
         android:layout_marginRight="@dimen/margin_right_value"
+        android:layout_marginBottom="@dimen/margin_bottom_value"
+        android:layout_weight="1"
         android:scaleType="fitCenter" />
-    
+
     <TextView
         android:id="@+id/answer_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
+        android:fontFamily="@font/play"
         android:gravity="center_horizontal"
-        android:textStyle="italic"
-        android:textSize="@dimen/answer_font_size" />
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/answer_font_size"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>

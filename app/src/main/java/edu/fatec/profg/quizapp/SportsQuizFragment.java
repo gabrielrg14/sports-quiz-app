@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
@@ -119,8 +120,9 @@ public class SportsQuizFragment extends Fragment {
                 }
             } else {
                 // O jogador Errou
-                answerTxt.setText("ERROOOOOU!!");
+                answerTxt.setText("ERRADO!!");
                 btnOption.setEnabled(false);
+                btnOption.setBackgroundResource(R.drawable.buttonred);
             }
         }
     };
@@ -151,6 +153,7 @@ public class SportsQuizFragment extends Fragment {
             for(int column = 0; column < llRow.getChildCount(); column++) {
                 Button btnOption = (Button) llRow.getChildAt(column);
                 btnOption.setEnabled(true);
+                btnOption.setBackgroundResource(R.drawable.buttonwhite);
                 String sportImgName = allSportsNamesList.get((row*2) + column);
                 btnOption.setText(sportImgName);
             }
